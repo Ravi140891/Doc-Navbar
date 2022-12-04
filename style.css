@@ -1,0 +1,269 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+nav{
+    padding: .5rem 1rem;
+    display: flex;
+    border: 1px solid grey;
+    justify-content: space-between;
+    align-items: center;
+}
+.menu-items{
+    display: none;
+}
+.star .fa-solid{
+    display: none;
+}
+.menu-icon{
+    display: none;
+}
+ul{
+    display: flex;
+    list-style: none;
+}
+ul li{
+    padding: 0 .5rem;
+}
+.left{
+    display: flex;
+    align-items: center;
+}
+#li-title{
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+
+a:hover{
+    text-decoration: underline;
+}
+ul li:hover{
+    cursor: pointer;
+}
+.share{
+    font-size: 18px;
+    padding: 5px;
+    background-color: rgb(17, 89, 197);
+    color: white;
+    border: none;
+    margin-right: 10px;
+}
+.share span{
+    padding: 0 5px;
+}
+.access{
+    background-color: whitesmoke;
+    color: rgb(17, 89, 197);
+    font-size: 17px;
+    padding: 7px;
+    border: none;
+    margin-right: 10px;
+}
+.meet img{
+    width: 18px;
+}
+.meet{
+    border: 1px solid grey;
+    border-radius: 10px;
+    position: relative;
+    top: 3px;
+    padding: 3px 7px;
+    margin-left: -10px;
+    margin-right: 10px;
+}
+button:hover{
+    cursor: pointer;
+}
+.user{
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    display: inline-block;
+    position: relative;
+    top: 6px;
+}
+.red{
+    background-color: red;
+}
+.blue{
+    background-color: blue;
+    left: -10px;
+}
+.orange{
+    background-color: orange;
+    left: -20px;
+}
+.name{
+    background-color: red;
+    color: white;
+    text-align: center;
+    top: 0;
+    padding: 2px 5px;
+}
+
+.user:hover{
+    cursor: pointer;
+}
+.star i{
+    position: relative;
+}
+.star p{
+    position: absolute;
+    left: 10.5rem;
+    background-color: black;
+    color: white;
+    padding: 0 4px;
+}
+.drive img{
+    position: relative;
+}
+.drive p{
+    position: absolute;
+    left: 9rem;
+    background-color: black;
+    color: white;
+    font-size: medium;
+}
+
+.details i{
+    position: relative;
+}
+.details p{
+    position:absolute;
+    left: 12.5rem;
+    background-color: black;
+    color: white;
+    font-size: medium;
+}
+.status i{
+    position: relative;
+}
+.status p{
+    position: absolute;
+    left: 15rem;
+    background-color: black;
+    color: white;
+    font-size: medium;
+}
+
+.meet div img{
+    position: relative;
+}
+.meet div p{
+    position: absolute;
+    width: 200px;
+    background-color: black;
+    color: white;
+    right: -5rem;
+}
+
+.share{
+    position: relative;
+}
+.share-link{
+    position: absolute;
+    background-color: black;
+    color: white;
+    /* width: 250px; */
+    font-size: 12px;
+    right: .5rem;
+    display: none;
+}
+.share-link p{
+    font-size: 12px;
+}
+
+.access{
+    position: relative;
+}
+.access-para{
+    position: absolute;
+    background-color: black;
+    color: white;
+    font-size: 13px;
+    width: 200px;
+    right: 16rem;
+    padding: 3px;
+}
+
+@media (min-width:550px) and (max-width: 768px){
+    nav{
+        padding: 0;
+    }
+    .share{
+        margin-right: 3px;
+        font-size: 13px;
+    }
+    .access{
+        margin-right: 3px;
+        font-size: 13px;
+    }
+    .user{
+        width: 20px;
+        height: 20px;
+    }
+    .orange{
+        margin-right: 3px;
+    }
+    .meet{
+        margin-right: 3px;
+        padding: 2px;
+        margin-left: -20px;
+    }
+    #li-title{
+        font-size: 1rem;
+    }
+    ul li{
+        padding: 0 2px;
+    }
+}
+
+@media (min-width: 100px) and (max-width: 550px){
+    .right{
+        display: none;
+    }
+    .star, .drive, .details, .status, .hide{
+        display: none;
+    }
+    .menu-icon{
+        display: block;
+        font-size: 2rem;
+        position: relative;
+        width: 100%;
+    }
+    #li-title{
+        display: block;
+    }
+    .fa-close{
+        display: none;
+    }
+    .menu-items ul{
+        display: block;
+        border: 1px solid black;
+        width: 15rem;
+    }
+    .menu-items ul li{
+        color: white;
+        /* background-color: black; */
+        font-size: 2rem;
+        border-bottom: 1px solid black;
+    }
+    .menu-items ul li:last-child{
+        border-bottom: none;
+    }
+    .menu-items{
+        position: absolute;
+        display: block;
+        top: 4.5rem;
+        left: 0;
+    }
+    .menu-items{
+        display: none;
+    }
+}
